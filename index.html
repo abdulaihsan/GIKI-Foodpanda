@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>GIKI FoodPanda</title>
     
-     <!-- Tailwind CSS -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- FontAwesome for Icons -->
@@ -122,8 +122,8 @@
         <!-- ==================== SPLASH SCREEN ==================== -->
         <div id="view-splash" class="view active bg-brand flex flex-col justify-center items-center text-white z-50">
             <div class="mb-8 animate-pulse">
-                <div class="w-28 h-28 rounded-full bg-white flex items-center justify-center shadow-2xl border-4 border-yellow-500">
-                       <!-- GIKI LOGO REPLACEMENT -->
+                <div class="w-32 h-32 rounded-full bg-white flex items-center justify-center shadow-2xl border-4 border-yellow-500 overflow-hidden p-2">
+                     <!-- GIKI LOGO REPLACEMENT -->
                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu_Mx59gHtEJjM8s5NmEY7ilRT0-zPiDXzVA&s" 
                           alt="GIKI Logo" 
                           class="w-full h-full object-contain">
@@ -143,7 +143,10 @@
         <!-- ==================== LOGIN SCREEN ==================== -->
         <div id="view-login" class="view bg-brand px-8 relative z-40">
             <div class="absolute top-0 left-0 w-full h-1/2 flex justify-center items-center flex-col">
-                <i class="fas fa-utensils text-white text-6xl opacity-20 mb-4"></i>
+                <div class="w-24 h-24 rounded-full bg-white flex items-center justify-center border-4 border-yellow-500 overflow-hidden mb-4 shadow-lg p-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu_Mx59gHtEJjM8s5NmEY7ilRT0-zPiDXzVA&s" 
+                         class="w-full h-full object-contain">
+                </div>
                 <h2 class="text-2xl font-bold text-white">Welcome</h2>
                 <p class="text-white text-xs opacity-70 mt-1">Order food or Manage Restaurant</p>
             </div>
@@ -443,7 +446,7 @@
                         <button onclick="showAddItemModal()" class="bg-brand text-white w-8 h-8 rounded-full shadow flex items-center justify-center"><i class="fas fa-plus"></i></button>
                     </div>
                     
-                    <div id="vendor-menu-list" class="grid grid-cols-2 gap-3">
+                    <div id="vendor-menu-list" class="space-y-3">
                         <!-- Menu Items -->
                     </div>
                 </div>
@@ -570,11 +573,11 @@
             { id: 1, name: "Zinger Burger", price: 450, category: "fastfood", image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "Crispy chicken fillet, cheese, lettuce", inStock: true },
             { id: 2, name: "Chicken Pizza", price: 1200, category: "fastfood", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "Large slice, extra cheese", inStock: true },
             { id: 3, name: "Cold Coffee", price: 250, category: "drinks", image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "Cold brew with milk", inStock: true },
-            { id: 4, name: "Masala Fries", price: 150, category: "fastfood", image: "https://images.unsplash.com/photo-1541592103040-cd15befd72f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "Crispy salted fries", inStock: true },
+            { id: 4, name: "Masala Fries", price: 150, category: "fries", image: "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJpZXN8ZW58MHx8MHx8fDA%3D", desc: "Crispy salted fries", inStock: true },
             { id: 5, name: "Oreo Shake", price: 300, category: "drinks", image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "Vanilla ice cream w/ fudge", inStock: true },
             { id: 6, name: "Chicken Roll", price: 200, category: "desi", image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "Grilled chicken, spicy mayo", inStock: true },
             { id: 7, name: "Fresh Juice", price: 300, category: "drinks", image: "https://images.unsplash.com/photo-1613478223719-2ab802602423?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "Freshly squeezed", inStock: true },
-            { id: 8, name: "Donut Box", price: 500, category: "dessert", image: "https://images.unsplash.com/photo-1551024601-5629633e4c70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", desc: "3 Assorted donuts", inStock: true }
+            { id: 8, name: "Donut Box", price: 500, category: "dessert", image: "https://images.unsplash.com/photo-1551024601-bec78aea704b", desc: "3 Assorted donuts", inStock: true }
         ];
 
         let cart = [];
@@ -1219,5 +1222,3 @@
     </script>
 </body>
 </html>
-
-
